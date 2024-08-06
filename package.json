@@ -1,0 +1,37 @@
+{
+    "name": "beatriceai",
+    "version": "1.0.0",
+    "description": "A Discord bot that uses the Google Generative AI API to generate text and images.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Zethsue/BeatriceAI.git"
+    },
+    "keywords": [
+        "bot",
+        "discord",
+        "ai",
+        "gemini",
+        "discord.js",
+        "nodejs",
+        "js",
+        "chatbot",
+        "coolbot"
+    ],
+    "author": "Zethsu <zethsu@proton.me>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Zethsue/BeatriceAI/issues"
+    },
+    "homepage": "https://github.com/Zethsue/BeatriceAI#readme",
+    "dependencies": {
+        "@google/generative-ai": "^0.16.0",
+        "axios": "^1.7.3",
+        "discord.js": "^14.15.3",
+        "dotenv": "^16.4.5",
+        "fs": "^0.0.1-security"
+    }
+}
