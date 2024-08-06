@@ -2,7 +2,6 @@ require('dotenv').config();
 import { Client, GatewayIntentBits } from 'discord.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import axios from 'axios';
-import fs from 'fs';
 
 const BEATRICE_TOKEN: string = process.env.BEATRICE_TOKEN!;
 const GEMINI_TOKEN: string = process.env.GEMINI_TOKEN!;
@@ -44,12 +43,6 @@ beatrice.on('messageCreate', async message => {
                 responseType: 'arraybuffer',
             });
             const imageBin = Buffer.from(imageBuf.data, 'binary').toString(
-                'base64',
-            );
-
-            fs.writeFileSync(
-                `./images/Image_${Date.now()}.png`,
-                imageBin,
                 'base64',
             );
 
@@ -106,13 +99,6 @@ beatrice.on('messageUpdate', async (oldMessage, newMessage) => {
         const imageBin = Buffer.from(imageBuf.data, 'binary').toString(
             'base64',
         );
-
-        fs.writeFileSync(
-            `./images/Image_${Date.now()}.png`,
-            imageBin,
-            'base64',
-        );
-
         const response = await geminiModel.generateContent([
             caption,
             {
