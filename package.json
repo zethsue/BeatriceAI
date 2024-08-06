@@ -1,7 +1,7 @@
 {
     "name": "beatriceai",
     "version": "1.0.0",
-    "description": "A Discord bot that uses the Google Generative AI API to generate text and images.",
+    "description": "A Discord bot that uses the Google Generative AI API to generate your answers and supporting images.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

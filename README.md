@@ -1,6 +1,6 @@
 # BeatriceAI
 
-A Discord bot that uses the Google Generative AI API to generate text and images.
+A Discord bot that uses the Google Generative AI API to generate your answers and supporting images.
 
 ## Features
 
