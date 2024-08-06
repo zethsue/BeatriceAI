@@ -4,10 +4,10 @@ A Discord bot that uses the Google Generative AI API to generate your answers an
 
 ## Features
 
--   Generate text and images using the Google Generative AI API
+-   Generate text using the Google Generative AI API
 -   Supports text and image captions
 -   Supports image attachments
--   Supports editing of generated text and images
+-   Supports editing your messages to generate new responses
 
 ## Installation
 
@@ -35,10 +35,10 @@ bun run index.ts
 
 To ping the bot, just type `!ping` in the chat. The bot will respond with `Pong!`.
 
-To ask the ai bot feature, you can just ping the bot and ask the bot to generate text or image.
+To ask the ai bot feature, you can just ping the bot and ask the bot what you want to ask.
 ![image](assets/Beatrice-AI.png)
 
-To ask the ai bot feature with image attachment, you can just ping the bot and ask the bot to generate text or image with image attachment.
+To ask the ai bot feature with image attachment, you can just send the image attachment and ask the bot what you want to ask.
 ![image](assets/Beatrice-AI-Image.png)
 
 ## License
